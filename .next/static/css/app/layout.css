@@ -569,14 +569,23 @@ video {
 .flex {
   display: flex;
 }
+.h-6 {
+  height: 1.5rem;
+}
 .w-40 {
   width: 10rem;
+}
+.w-6 {
+  width: 1.5rem;
 }
 .w-full {
   width: 100%;
 }
 .flex-col {
   flex-direction: column;
+}
+.flex-wrap {
+  flex-wrap: wrap;
 }
 .items-center {
   align-items: center;
@@ -625,6 +634,14 @@ video {
 }
 .font-semibold {
   font-weight: 600;
+}
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+.text-rose-600 {
+  --tw-text-opacity: 1;
+  color: rgb(225 29 72 / var(--tw-text-opacity));
 }
 
 :root {
