@@ -1,21 +1,19 @@
 import CardFilme from "@/components/CardFilme";
 import Title from "@/components/Title";
 
-export default function Home() {
+async function carregarFilmes(){
+  const url = "https://api.themoviedb.org/3/trending/movie/week?api_key=1e922667481ab207d642450b0efb461e&language=pt-br"
+  const resposta = await fetch(url)
+  const json = await resposta.json()
+  console.log(json)
+  return json.results
+}
 
-  const filmes=[
-    {
-      titulo: "padaria Karol",
-      nota: 6.2,
-      poster: "https://vejasp.abril.com.br/wp-content/uploads/2021/10/Zestzing-Padaria-Artesanal-2.jpg?quality=70&strip=info&w=1280&h=720&crop=1"
-    },
-    {
-      titulo: "Hamburguer espacial",
-      nota: 6.2,
-      poster: "https://cdn.deliway.com.br/blog/base/dc5/f43/ce4/melhores-hamburgueria-sao-paulo.jpg"
-    }
+export default async function Home() {
 
-  ]
+  carregarFilmes()
+
+  const filmes = await carregarFilmes()
 
   return (
     <>
@@ -49,7 +47,7 @@ export default function Home() {
         </ul>
       </nav>
 
-      <Title>dicas do dia</Title>
+      <Title>DICA DE FILMES PRA ALMOÇAR OU JANTAR</Title>
 
       <section className="flex flex-wrap">
         {filmes.map(filme => <CardFilme filme={filme}/>)}
