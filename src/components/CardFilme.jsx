@@ -1,19 +1,23 @@
 "use client"
 
+import useFavorito from '@/hooks/filmes'
 import { HeartIcon } from '@heroicons/react/24/outline'
 
-import { useState } from 'react'
 
 export default function CardFilme({filme}){
-    const [favorito, setFavorito] = useState(false)
+    const { favorito, favoritar, desfavoritar } = useFavorito()
     const url_image = `https://image.tmdb.org/t/p/w500/${filme.poster_path}`
+
+    
+
+    
 
     return(
     <div id="card" className="flex flex-col w-40 justify-center items-center m-2">
         { favorito ? 
-            <HeartIcon onClick ={() => setFavorito(false)} className="h-6 w-6 text-rose-600" />
+            <HeartIcon onClick ={() => desfavoritar(filme)} className="h-6 w-6 text-rose-600" />
         :
-            <HeartIcon onClick ={() => setFavorito(true)} className="h-6 w-6 text-black" />
+            <HeartIcon onClick ={() => favoritar(filme)} className="h-6 w-6 text-black" />
         }
         <img className="rounded" src={url_image} alt="" />
         <span className="font-bold text-center line-clamp-1 text-black">
