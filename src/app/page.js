@@ -21,33 +21,37 @@ export default async function Home() {
         <ul className="flex gap-64.6">
           <li>
             <a href="#">
-              <h1>Bora?</h1>
+              <h1>SNACK AND MOVIES</h1>
             </a>
           </li>
 
           <li>
-            <a href="#">Salgados</a>
+            <a href="#">___</a>
           </li>
 
           <li>
-            <a href="#">Padocas</a>
+            <a href="#">Melhores filmes</a>
           </li>
 
           <li>
-            <a href="#">Hambúrguers</a>
+            <a href="#">___</a>
           </li>
 
           <li>
-            <a href="#">Podrão</a>
+            <a href="#">Melhores Snacks</a>
           </li>
 
           <li>
-            <a href="#">Café</a>
+            <a href="#">    </a>
+          </li>
+
+          <li>
+            <a href="#"></a>
           </li>
         </ul>
       </nav>
 
-      <Title>DICA DE FILMES PRA ALMOÇAR OU JANTAR</Title>
+      <Title>OS MELHORES FILMES PRO SEU SNACK</Title>
 
       <section className="flex flex-wrap">
         {filmes.map(filme => <CardFilme filme={filme}/>)}
