@@ -5,6 +5,7 @@ import loginimage from "@/images/login.png"
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { toast } from "react-hot-toast";
+import { serverLogin } from "@/actions/user";
 
 export default function Login(){
 
@@ -14,7 +15,8 @@ export default function Login(){
 
     function login(e){
         e.preventDefault()
-        if (email == "pedromesquita3103@gmail.com" && senha == "pedro123"){
+        if (email == "pedromesquita3103@gmail.com" && senha == "123"){
+            serverLogin() 
             push("/")
         }else{
             toast.error("dados inválidos")

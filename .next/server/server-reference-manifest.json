@@ -1,4 +1,25 @@
 {
-  "node": {},
+  "node": {
+    "6e952b466bc23cb6ea21f86ce1a28f0817eb5b24": {
+      "workers": {
+        "app/login/page": "(actionBrowser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fpedromodesto%2Ffiapfilmes%2Fsrc%2Factions%2Fuser.js%22%2C%5B%22serverLogin%22%2C%22serverLogout%22%5D%5D%5D&__client_imported__=true!",
+        "app/page": "(actionBrowser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fpedromodesto%2Ffiapfilmes%2Fsrc%2Factions%2Fuser.js%22%2C%5B%22serverLogin%22%2C%22serverLogout%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/login/page": "actionBrowser",
+        "app/page": "actionBrowser"
+      }
+    },
+    "c50bd9b897c818fc37bbdac184dfbbd5fc6b28b3": {
+      "workers": {
+        "app/login/page": "(actionBrowser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fpedromodesto%2Ffiapfilmes%2Fsrc%2Factions%2Fuser.js%22%2C%5B%22serverLogin%22%2C%22serverLogout%22%5D%5D%5D&__client_imported__=true!",
+        "app/page": "(actionBrowser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fpedromodesto%2Ffiapfilmes%2Fsrc%2Factions%2Fuser.js%22%2C%5B%22serverLogin%22%2C%22serverLogout%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/login/page": "actionBrowser",
+        "app/page": "actionBrowser"
+      }
+    }
+  },
   "edge": {}
 }

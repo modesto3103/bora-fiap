@@ -1,5 +1,7 @@
 import CardFilme from "@/components/CardFilme";
+import NavBar from "@/components/NavBar";
 import Title from "@/components/Title";
+
 
 async function carregarFilmes(){
   const url = "https://api.themoviedb.org/3/trending/movie/week?api_key=1e922667481ab207d642450b0efb461e&language=pt-br"
@@ -15,41 +17,10 @@ export default async function Home() {
 
   const filmes = await carregarFilmes()
 
-  return (
+  return (//JSX
     <>
-      <nav className="flex px-8 py-4 bg-rose-600">
-        <ul className="flex gap-64.6">
-          <li>
-            <a href="#">
-              <h1>SNACK AND MOVIES</h1>
-            </a>
-          </li>
+      <NavBar />
 
-          <li>
-            <a href="#">___</a>
-          </li>
-
-          <li>
-            <a href="#">Melhores filmes</a>
-          </li>
-
-          <li>
-            <a href="#">___</a>
-          </li>
-
-          <li>
-            <a href="#">Melhores Snacks</a>
-          </li>
-
-          <li>
-            <a href="#">    </a>
-          </li>
-
-          <li>
-            <a href="#"></a>
-          </li>
-        </ul>
-      </nav>
 
       <Title>OS MELHORES FILMES PRO SEU SNACK</Title>
 
